@@ -82,7 +82,7 @@ local function loadPositions()
 				{lat=51.985873, lng=-0.866680}
 				},
 			name = "Outside",
-			sound = "/SCRIPTS/TELEMETRY/outside.wav",
+			sound = "/SCRIPTS/TELEMETRY/outsid.wav",
 			priority = 1 
 		},
 	field = {
@@ -100,11 +100,10 @@ local function loadPositions()
 		linedup		= {
 			coords =
 				{
-				
-				{lat=51.987067, lng=-0.870670},
-				{lat=51.987014, lng=-0.870456},
-				{lat=51.990470, lng=-0.864650},
-				{lat=51.990371, lng=-0.864591}
+				{lat=51.987093, lng=-0.870659},
+				{lat=51.987033, lng=-0.870477},
+				{lat=51.990361, lng=-0.864652},
+				{lat=51.990447, lng=-0.864727}
 
 				},
 			name = "lined up",
