@@ -1,6 +1,8 @@
 --[[
 
-gps voice 
+gpsv.lua
+
+GPS voice script for opentx 2.2.1
 
 History
 
@@ -62,14 +64,15 @@ end
 
 
 local function loadPositions()
-
+  -- Put the name of your club into this sound file
   playFile("/SCRIPTS/TELEMETRY/load.wav")
 
+  --The index of each region is arbitrary, helps enforce ordering though
   locations = {
 	trees = {
-			coords =
+			coords =  --list of latitude and longitudes defining the region (order matters)
 				{
-					{lat=51.989364, lng=-0.865092},
+					{lat=51.989364, lng=-0.865092}, 
 					{lat=51.989688, lng=-0.868386},
 					{lat=51.988079, lng=-0.870204},
 					{lat=51.987088, lng=-0.866074},
@@ -78,8 +81,8 @@ local function loadPositions()
 					{lat=51.990127, lng=-0.868549},
 					{lat=51.989757, lng=-0.864858}
 				},
-			name = "trees",
-			sound = "/SCRIPTS/TELEMETRY/trees.wav"
+			name = "trees",  -- what is shown on screen
+			sound = "/SCRIPTS/TELEMETRY/trees.wav"  --what is played when you enter this region
 		},
 	field = {
 			coords =
@@ -91,6 +94,17 @@ local function loadPositions()
 				},
 			name = "field",
 			sound = "/SCRIPTS/TELEMETRY/field.wav"
+		},
+		lineup		= {
+			coords =
+				{
+				     {lat=51.987919, lng=-0.869085},
+					 {lat=51.989432, lng=-0.866510},
+					 {lat=51.989419, lng=-0.866274},
+					 {lat=51.987906, lng=-0.868978}
+				},
+			name = "lined up",
+			sound = "/SCRIPTS/TELEMETRY/lineup.wav"
 		}
 }
 
