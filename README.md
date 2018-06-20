@@ -14,6 +14,10 @@ There is currently no support for nested regions. Whichever is the highest prior
 is the location given. So if you have a small area within a larger area, and you want to hear the name of the smaller area announced, 
 then make sure the smaller area has a higher priority number.
 
+## Installation
+
+Copy the lua script gpsv.lua and the all the wav files to ```/SCRIPTS/TELEMETRY``` on your SD card, then choose one of your telemetry screens to be a script, and choose the gpsv script from the menu. 
+
 ## Code / details
 
 The backbone of the script comes from the opentx gps example.
