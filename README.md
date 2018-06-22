@@ -36,8 +36,12 @@ get the right points because the value in the system is not affected by the bug.
 
 ## Testing
 
-Currently tested on opentx 2.2.1 simulator for x9d+
-not tested on hardware - so performance has not been assessed.
+Currently tested on 
+- opentx 2.2.1 simulator for x9d+
+- Taranis X9d+, frsky GPS sensor V2
+
+## Limitations
+In practice, GPS can be out by a circular error probability of ca. 2.5 - 3.0m under ideal conditions, and worse if there is shadowing or multipath arising from obstructions (e.g. parts of your model). This is sufficient to trigger alerts earlier or later than expected. In my view, so far, this is fun for a flight, but not accurate enough to be useful for navigation at a small model flying field without moving to a differential system, where a separate receiver and GPS sensor would be placed in a fixed known location and live corrections applied to the data coming from the model.  
 
 ## History
 
